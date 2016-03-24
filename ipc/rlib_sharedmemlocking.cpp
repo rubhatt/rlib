@@ -10,7 +10,6 @@ SharedMemLocking::SharedMemLocking(const std::string &shared_mem_name,
                                    const int size)
     : d_shared_mem(open_or_create, shared_mem_name.c_str(), size) {
 
-	auto x = 10;
   auto valloc = void_allocator{d_shared_mem.get_segment_manager()};
 
   // TODO - should these be named? 

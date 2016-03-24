@@ -3,6 +3,7 @@
 !/test
 !CMakeLists.txt
 !.gitignore
+!README.md
 
 # build artifacts
 *.cmake
