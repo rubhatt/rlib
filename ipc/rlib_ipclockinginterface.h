@@ -5,11 +5,11 @@
 
 namespace rlib {
 
-class IPCLockingInteraface {
+class IPCLockingInterface {
 public:
-  IPCLockingInteraface() {}
+  IPCLockingInterface() {}
 
-  virtual ~IPCLockingInteraface() {}
+  virtual ~IPCLockingInterface() {}
 
   virtual bool lock(const std::string &lock_name) = 0;
   virtual bool unlock(const std::string &lock_name) = 0;

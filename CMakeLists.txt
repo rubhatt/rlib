@@ -4,3 +4,4 @@ project(rlib)
 
 add_subdirectory(ipc)
 add_subdirectory(test)
+target_compile_features(ipc PRIVATE cxx_constexpr)
