@@ -1,0 +1,14 @@
+/*
+!/ipc
+!/test
+!CMakeLists.txt
+!.gitignore
+
+# build artifacts
+*.cmake
+*.make
+*CMakeFiles*
+
+# my problems
+*.swp
+*.a
