@@ -1,6 +1,7 @@
 /*
 !/ipc
 !/test
+!/prob
 !CMakeLists.txt
 !.gitignore
 !README.md
