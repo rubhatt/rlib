@@ -12,7 +12,7 @@ namespace rlib {
 class Bitfield {
 
 public:
-  /*
+    /*
    * \brief make bitfield of a given size.
    */
     Bitfield(const std::size_t sz);
@@ -21,8 +21,8 @@ public:
 
     bool value(std::size_t pos);
 
-    std::size_t capacity() const { 
-	return m_bytearray.size();
+    std::size_t capacity() const {
+        return m_bytearray.size();
     }
 
 private:
