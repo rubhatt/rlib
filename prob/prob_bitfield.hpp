@@ -5,9 +5,16 @@
 
 namespace rlib {
 
+/*
+ * \class Bitfield
+ * \brief provides basic bitfield functionality.
+ */
 class Bitfield {
 
 public:
+  /*
+   * \brief make bitfield of a given size.
+   */
     Bitfield(const std::size_t sz);
 
     void flip(std::size_t pos, bool value);

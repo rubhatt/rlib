@@ -6,6 +6,9 @@ namespace rlib {
 
 static int k_NumBitsPerByte = 8;
 
+/*
+ * contains implementation details
+ */
 namespace detail {
 
 unsigned closest_factor_ceil(unsigned num, unsigned mult) {
@@ -28,7 +31,6 @@ DividerRemPair bitfield_index(unsigned num) {
 
 Bitfield::Bitfield(const std::size_t sz) {
     m_bytearray.resize(detail::closest_factor_ceil(sz, k_NumBitsPerByte), '\0');
-
 }
 
 void Bitfield::flip(std::size_t pos, bool value) {
