@@ -55,7 +55,7 @@ void Bitfield::flip(std::size_t pos, bool value) {
     }
 }
 
-bool Bitfield::value(std::size_t pos) {
+bool Bitfield::value(std::size_t pos) const {
     auto div_rem = detail::bitfield_index(pos);
     unsigned div = std::get<0>(div_rem);
     if (div >= m_bytearray.size()) {

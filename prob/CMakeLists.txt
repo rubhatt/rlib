@@ -9,4 +9,4 @@ add_library(prob
 # specify target includes
 target_include_directories(prob PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
-target_compile_features(prob PRIVATE cxx_constexpr)
+target_compile_features(prob PUBLIC cxx_constexpr)

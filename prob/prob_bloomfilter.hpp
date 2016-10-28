@@ -3,7 +3,7 @@
 
 #include <prob_bitfield.hpp>
 
-#include <cstdint>
+#include <stdint.h>
 #include <string>
 #include <array>
 
@@ -39,7 +39,8 @@ private:
     int num_hash_functions_;
     Bitfield bitfield_;
 
-    static const std::array<uint32_t, 154> s_Seeds;
+    static const int k_NumMaxSeeds = 154;
+    static const std::array<uint32_t, k_NumMaxSeeds> s_Seeds;
 };
 
 

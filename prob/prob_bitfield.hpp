@@ -19,7 +19,7 @@ public:
 
     void flip(std::size_t pos, bool value);
 
-    bool value(std::size_t pos);
+    bool value(std::size_t pos) const;
 
     std::size_t capacity() const {
         return m_bytearray.size();
